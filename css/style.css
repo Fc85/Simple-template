@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap');
+
+/*Mise en page générale*/
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/*Container principal*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/**********************************   Header   **********************************/
+
+header{/*Style général*/
+    color: #82868f;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+header h1{/*Titre "LOGO"*/
+    font-size: 30pt;
+    margin-left: 20%;
+}
+
+header ul{/*Liste du header*/
+    list-style: none;
+    margin-right: 20%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+header li{ /*Text de la liste "LABEL"*/
+    font-size: 14pt;
+    margin-left: 3%;
+}
+
+header button{/*Bouton SIGN IN*/
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 125px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #0ebfdd;
+}
+
+/**********************************   Section 1 (Montagne)   **********************************/
+#s1{/*Style général*/
+    height: 600px;
+    background-image: url(../images/section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}h2{ /*Titre*/
+    font-size: 44pt;
+    margin: 0;
+}
+
+#s1 div{/*Div*/
+    display: inline-flex;
+    align-items: center;
+}
+
+#s1 p{/*Paragraphe*/
+    font-size: 20pt;
+    width: 60%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#s1 i{/*Icones*/
+    font-size: x-small;
+    margin: 20px;
+}
+
+/**********************************   Section 2 (About)   **********************************/
+#s2{/*Style général*/
+    height: 250px;
+    text-align: center;
+}
+
+#s2 h2{/*Titre*/
+    color: #0ebfdd;
+    font-size: 44pt;
+    margin: 0;
+}
+
+#s2 p{/*Paragraphe*/
+    width: 50%;
+    margin: auto;
+    font-size: 20pt;
+}
+
+
+/**********************************   Section 3 (Team)   **********************************/
+#s3{/*Style général*/
+    height: 600px;
+    background-color: #0ebfdd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+
+#s3 h2{/*Premier titre*/
+    font-size: 44pt;
+}
+
+#s3 h3{/*Deuxième titre*/
+    margin-bottom: 0;
+}
+
+#s3 h2,#s3 p{/*Style commun au premier style et au paragraphe*/
+    margin: 0;
+}
+
+#s3_portraits{/*Box générale des 3 box de contenant les portraits*/
+    display: flex;
+}
+
+.face{/*Première box de portrait*/
+    margin-left: -10%;
+}
+
+.face2, .face3{/*Deuxième et troisième box de portrait*/
+    margin-left: 10%;
+}
+
+
+#s3 button{/*Bouton WORK WITH US*/
+    width: 10%;
+    color: white;
+    border: 1px solid white;
+    background: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+/**********************************   Section 4 (MAP)   **********************************/
+#s4{/*Style général*/
+    height: 600px;
+    margin-bottom: -0.5%;
+    padding: 0;
+} 
+
+#s4 iframe{/*Map*/
+    width: 100%;
+    height: 100%;
+}
+
+/**********************************   Footer   **********************************/
+footer{/*Style général*/
+    background-color: #45494d;
+}ul{/*Style générale des ul du footer*/
+    list-style: none;
+    display: flex;
+}
+
+/**********************************   Section 5 (DANS LE FOOTER)   **********************************/
+#s5{/*Style général*/
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+#top{/*Box de la partie supérieur du footer*/
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_top_li_une{/*Première liste de la partie supérieur du footer*/
+    width: 30%;
+}
+
+#footer_top_li_une li{/*Text de la première liste*/
+    margin: auto;
+    color: #d7dee4;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+#footer_top_li_deux{/*Deuxième liste de la partie supérieur du footer*/
+    margin-right: 5%;
+}
+
+
+#footer_top_li_deux li{/*Text de la deuxième liste*/
+    color: #d7dee4;
+    border: 1px solid #d7dee4;
+    width: 8px;
+    height: 8px;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.icons{/*Icones de la deuxième liste*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ligne_footer{/*Ligne qui sépare la partie supérieur et inférieur du footer*/
+    border: 0.5px solid #73767a;
+    width: 95%;
+    margin: auto;
+}
+
+#bot{/*Box de la partie inférieur du footer*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bot ul{/*Liste de la partie inférieur du footer*/
+    width:30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bot li{/*Text de la liste*/
+    font-size: 12pt;
+    color: #73767a;
+}
+
+#bot li hr{/*Séparateur de text de la liste*/
+    height: 9pt;
+    border: 1px solid #73767a;
+}
+
+/**********************************   RESPONSIVE DESGIN   **********************************/
+@media screen and (max-width: 640px) {
+
+    /**************** HEADER ****************/
+    header{/*Style général*/
+        justify-content: space-around;
+    }
+
+    header h1{/*Titre "LOGO"*/
+        margin: 0;
+        font-size: 20pt;
+    }
+    
+    header ul{/*Liste du header*/
+        margin: 0;
+    }
+
+    header li{/*Text de la liste "LABEL"*/
+        font-size:10pt;
+    }
+
+    header button{/*Bouton SIGN IN*/
+        font-size: 10pt;
+        padding: 5px;
+    }
+
+    /**************** PREMIERE SECTION ****************/
+    #s1{/*Style général*/
+        height: 400px;
+    }
+
+    #s1 h2{
+        font-size: 30pt;
+    }
+
+    #s1 p{/*Paragraphe*/
+        font-size: 10pt;
+        width: 50%;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+
+    /**************** DEUXIEME SECTION ****************/
+    #s2{/*Style général*/
+        height: 150px;
+    }
+
+    #s2 h2{/*Premier titre*/
+        font-size: 30pt;
+    }
+    
+    #s2 p{/*Paragraphe*/
+        font-size: 10pt;
+    }
+
+    /**************** TROISIEME SECTION ****************/
+    #s3{/*Style général*/
+        height: 900px;
+        align-items: center;
+    }
+
+    #s3_portraits{/*Box générale des 3 box de contenant les portraits*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #s3 h2{/*Premier titre*/
+        font-size: 30pt;
+    }
+
+    #s3 p{
+        font-size: 10pt;
+    }
+
+    #s3 button{/*Bouton WORK WITH US*/
+        width: 25%;
+    }
+
+    .face, .face2, .face3{/*Box de portrait*/
+        margin-left: 0%;
+    }
+
+
+    /**************** QUATRIEME SECTION ****************/
+    #s4{/*Style général*/
+        height: 300px;
+    }
+
+    /**************** FOOTER ****************/
+    #footer_top_li_une li{/*Text de la première liste*/
+        font-size: 8pt;
+    }
+
+    #bot ul{/*Liste de la partie inférieur du footer*/
+        width:50%;
+    }
+    
+    #bot li{/*Text de la liste*/
+        font-size: 8pt;
+    }
+    
+    #bot li hr{/*Séparateur de text de la liste*/
+        height: 5pt;
+    }
+
+} 
